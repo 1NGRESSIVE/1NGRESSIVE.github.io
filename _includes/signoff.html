@@ -1,0 +1,22 @@
+            <div class="notepad-author-info">
+                <div class="row">
+                    <section class="notepad-post-author small-12 columns">
+                        {% for author in site.data.members.author %}
+                {% if author.name == page.author %}
+                            <img src="{{site.url}}/images/author/{{ author.avatar }}" class="notepad-post-author-avatar" alt="{{ author.name }}'s photo">
+                                            
+                            <span class="author-label">Author</span>
+            
+                
+                    <h2>{{ author.name }}</h2>
+                    <p> {{ author.position }} <br>
+                                <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:{{ author.email }}" class="author-website">{{ author.email }}</a> <br>
+                                <i class="fa fa-twitter-square" aria-hidden="true"> </i> <a href="http://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a> 
+                    </p>
+                
+                {% endif %}
+                        {% endfor %}
+
+                    </section>
+                </div>
+            </div>
