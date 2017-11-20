@@ -1,6 +1,7 @@
 title:            INGRESSIVE Blog
 description:      "The Threat Working for You"
 logo:             logo.png
+logo_pages:       ingressive_white.png
 share:            true
 dropcap:			    true
 # Change url to your domain. Leave localhost server or blank when working locally.
